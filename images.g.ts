@@ -3,25 +3,6 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "image1":
-            case "myPlayer-front":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . e e . . . . . . . 
-. . . . . . e e e e . . . . . . 
-. . . . . . d d d d . . . . . . 
-. . . . . . f d d f . . . . . . 
-. . . . . . d d d d . . . . . . 
-. . . . 8 8 8 8 8 8 8 8 . . . . 
-. . . . d 8 8 8 8 8 8 d . . . . 
-. . . . d 8 8 8 8 8 8 d . . . . 
-. . . . d 8 8 8 8 8 8 d . . . . 
-. . . . . f f f f f f . . . . . 
-. . . . . f f . . f f . . . . . 
-. . . . . f f . . f f . . . . . 
-`;
             case "image10":
             case "arrowDown":return img`
 . . . . . . . . . . . . . . . . . 
@@ -281,25 +262,6 @@ f f f f f f f f f f f f f f f f
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `;
-            case "image4":
-            case "myPlayer-back":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . e e . . . . . . . 
-. . . . . . e e e e . . . . . . 
-. . . . . . e e e e . . . . . . 
-. . . . . . e e e e . . . . . . 
-. . . . . . d d d d . . . . . . 
-. . . . 8 8 8 8 8 8 8 8 . . . . 
-. . . . d 8 8 8 8 8 8 d . . . . 
-. . . . d 8 8 8 8 8 8 d . . . . 
-. . . . d 8 8 8 8 8 8 d . . . . 
-. . . . . f f f f f f . . . . . 
-. . . . . f f . . f f . . . . . 
-. . . . . f f . . f f . . . . . 
-`;
             case "image5":
             case "arrowUp":return img`
 . . . . . . . . . . . . . . . . . 
@@ -358,31 +320,31 @@ f f f f f f f f f f f f f f f f
 . . f 4 4 4 4 4 4 4 4 4 4 f . . 
 . . f f f f f f f f f f f f . . 
 `;
+            case "image1":
+            case "myPlayer-front":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . e e . . . . . . . 
+. . . . . . e e e e . . . . . . 
+. . . . . . d d d d . . . . . . 
+. . . . . . f d d f . . . . . . 
+. . . . . . d d d d . . . . . . 
+. . . . . 8 8 8 8 8 8 . . . . . 
+. . . . . d 8 8 8 8 d . . . . . 
+. . . . . d 8 8 8 8 d . . . . . 
+. . . . . d 8 8 8 8 d . . . . . 
+. . . . . . f f f f . . . . . . 
+. . . . . . f . . f . . . . . . 
+. . . . . . f . . f . . . . . . 
+`;
         }
         return null;
     })
 
     helpers._registerFactory("animation", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "myAnim0":
-            case "anim2":return [img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`];
             case "myAnim1":
             case "anim3":return [img`
 . . . . . . . . . . . . . . . . . 
@@ -516,6 +478,13 @@ f f f f f f f f f f f f f f f f
     })
 
     helpers._registerFactory("song", function(name: string) {
+        switch(helpers.stringTrim(name)) {
+
+        }
+        return null;
+    })
+
+    helpers._registerFactory("json", function(name: string) {
         switch(helpers.stringTrim(name)) {
 
         }

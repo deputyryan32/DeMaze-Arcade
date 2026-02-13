@@ -89,6 +89,15 @@ info.onScore(4, function (){
         info.startCountdown(60.1)
         let chest3 = sprites.create(assets.image`myChest3`, SpriteKind.EndChest3)
         tiles.placeOnRandomTile(chest3, assets.tile`tileGrassBAD`)
+        // Arrows Down
+        game.onUpdateInterval(250, function () {
+            if (!death) {
+                let arrow = sprites.create(assets.image`arrowDown`, SpriteKind.Arrow);
+                tiles.placeOnRandomTile(arrow, assets.tile`arrowTileDown`);
+                arrow.vy = 135;
+                arrow.setFlag(SpriteFlag.GhostThroughWalls, true)
+            }
+        })
     })
 })
 
@@ -108,7 +117,7 @@ info.onCountdownEnd(function (){
 game.onUpdateInterval(500, function(){
     if (!death){
         let arrow = sprites.create(assets.image`arrowDown`, SpriteKind.Arrow);
-        tiles.placeOnRandomTile(arrow, assets.tile`arrowTile`);
+        tiles.placeOnRandomTile(arrow, assets.tile`arrowTileDown`);
         arrow.vy = 135;
         arrow.setFlag(SpriteFlag.GhostThroughWalls, true)
     }
