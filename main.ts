@@ -109,7 +109,7 @@ game.onUpdateInterval(500, function(){
     if (!death){
         let arrow = sprites.create(assets.image`arrowDown`, SpriteKind.Arrow);
         tiles.placeOnRandomTile(arrow, assets.tile`arrowTile`);
-        arrow.vy = 100;
+        arrow.vy = 135;
         arrow.setFlag(SpriteFlag.GhostThroughWalls, true)
     }
 })
@@ -119,7 +119,7 @@ game.onUpdateInterval(520, function () {
     if (!death) {
         let arrow = sprites.create(assets.image`arrowUp`, SpriteKind.Arrow);
         tiles.placeOnRandomTile(arrow, assets.tile`arrowTileUp`);
-        arrow.vy = -100;
+        arrow.vy = -135;
         arrow.setFlag(SpriteFlag.GhostThroughWalls, true)
     }
 })
