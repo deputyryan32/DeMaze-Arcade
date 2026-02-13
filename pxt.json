@@ -1,0 +1,38 @@
+{
+    "name": "DeMaze",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "pxt-button-combos": "github:jwunderl/pxt-button-combos#v0.0.24",
+        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3",
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.2",
+        "tilemaps": "github:microsoft/pxt-tilemaps#v1.12.0",
+        "carnival": "github:microsoft/arcade-carnival#v0.0.7",
+        "color-coded-tilemap": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v2.0.63",
+        "tag": "v2.0.63",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/5f6dbe1863a184bb2cde85fd93133e94e9719e03",
+        "target": "2.0.63",
+        "pxt": "11.3.68",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj",
+    "languageRestriction": "javascript-only"
+}
