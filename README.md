@@ -1,26 +1,65 @@
- 
+# DeMaze
 
+DeMaze is a maze game built in Microsoft MakeCode Arcade.
 
-> Open this page at [https://deputyryan32.github.io/demaze-arcade/](https://deputyryan32.github.io/demaze-arcade/)
+This project started as a school assignment, but I am also working on it in my free time because I want to grow it into something much bigger with community made maps.
 
-## Use as Extension
+---
 
-This repository can be added as an **extension** in MakeCode.
+## What is DeMaze?
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/deputyryan32/demaze-arcade** and import
+DeMaze is a maze game where you:
 
-## Edit this project
+- Go through maze maps  
+- Collect Food  
+- Beat the Timer  
+- Avoid Death  
+- Reach the chest to win  
 
-To edit this repository in MakeCode.
+The goal is to keep the game fun by adding new maps and challenges over time.
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/deputyryan32/demaze-arcade** and click import
+---
 
-#### Metadata (used for search, rendering)
+## Project Status
 
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+This project is still a work in progress.
+
+Things will change.  
+Things might break.  
+Things will improve over time.
+
+---
+
+## Future Plans
+
+- More maze maps  
+- Community made maps  
+- More hazards  
+- Difficulty scaling  
+- Performance improvements  
+- General polish
+
+---
+
+## Why I Made This
+
+This project was originally made for a school assignment. I decided to keep working on it in my free time to make it better and to improve my coding skills.
+
+---
+
+## Contributing
+
+Right now this is mostly a personal project. Community made maps may be supported more in the future once the system is more stable.
+
+---
+
+## Built With
+
+- Microsoft MakeCode Arcade  
+- TypeScript  
+
+---
+
+## Notes
+
+This project is still early stage, so expect some rough edges.
