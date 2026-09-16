@@ -12,7 +12,6 @@ info.setScore(0)
 info.setLife(5)
 
 let death = false;
-game.splash("How to Move.", "Use Arrows")
 game.splash("How to Win.", "Get the food and reach the chest!")
 
 // Spawn/Tilemap Logic
@@ -135,7 +134,7 @@ game.onUpdateInterval(1500, function(){
     if (!death){
         let arrow = sprites.create(assets.image`arrowDown`, SpriteKind.Arrow);
         tiles.placeOnRandomTile(arrow, assets.tile`arrowTile`);
-        arrow.vy = 100;
+        arrow.vy = 120;
         arrow.setFlag(SpriteFlag.GhostThroughWalls, true)
     }
 })
@@ -145,7 +144,7 @@ game.onUpdateInterval(1500, function () {
     if (!death) {
         let arrow = sprites.create(assets.image`arrowUp`, SpriteKind.Arrow);
         tiles.placeOnRandomTile(arrow, assets.tile`arrowTileUp`);
-        arrow.vy = -100;
+        arrow.vy = -120;
         arrow.setFlag(SpriteFlag.GhostThroughWalls, true)
     }
 })
@@ -156,13 +155,13 @@ sprites.onOverlap(SpriteKind.Arrow, SpriteKind.Player, function (arrow, otherSpr
     myPlayer.startEffect(effects.fire, 1000)
     info.changeCountdownBy(-10)
 })
+
 sprites.onOverlap(SpriteKind.Arrow, SpriteKind.Arrow, function (arrow, arrow2) {
-    arrow.startEffect(effects.fire, 2000)
-    arrow2.startEffect(effects.fire, 2000)
+    arrow.startEffect(effects.fire, 1500)
+    arrow2.startEffect(effects.fire, 1500)
     sprites.destroy(arrow)
     sprites.destroy(arrow2)
 })
-
 
 info.onLifeZero(function (){
     animation.runImageAnimation(myPlayer, assets.animation`myAnim1`, 500, false)
@@ -173,11 +172,4 @@ info.onLifeZero(function (){
     info.onCountdownEnd(function(){
         game.gameOver(false)
     })
-})
-
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    myPlayer.sayText("Rethinking Life...", 1500)
-})
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    myPlayer.sayText("Rethinking Life...", 1500)
 })
